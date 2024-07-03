@@ -38,7 +38,7 @@ spec:
                   name: {{ .Values.webistecs.secrets.coinbaseApiSecretSecret }}
                   key: cb_apiSecret
             - name: DATABASE_PATH
-              value: "/mnt/nfsshare/webistecs-database/local-webistecs.db"
+              value: "/mnt/nfsshare/webistecs-database/webistecs.db"
           resources:
             requests:
               memory: "{{ .Values.webistecs.resources.requests.memory }}"
