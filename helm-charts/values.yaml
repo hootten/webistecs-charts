@@ -27,7 +27,7 @@ dbMigrationJob:
     tag: 1
   environment:
     aspNetCoreEnvironment: Production
-    defaultConnectionString: "Data Source=/mnt/nfsshare/webistecs-database/webistecs.db"
+    defaultConnectionString: "Data Source=/mnt/nfsshare/webistecs-database/webistecsjwebfhewjfewbf.db"
   volumeMounts:
     - name: db-storage
       mountPath: /mnt/nfsshare/webistecs-database
