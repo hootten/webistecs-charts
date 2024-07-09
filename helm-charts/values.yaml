@@ -4,6 +4,9 @@ webistecs:
   image:
     repository: docker.io/niallwootten/webistecs
     tag: 2
+  environment:
+    aspNetCoreEnvironment: Production
+    webistecsContext: "Data Source=/mnt/nfsshare/webistecs-database/local-webistecs.db"
   imagePullSecret: myregistrykey
   secrets:
     coinbaseApiKeySecret: my-secret
@@ -20,6 +23,10 @@ webistecs:
       memory: "1Gi"
       cpu: "1000m"
 
+env:
+  ASPNETCORE_ENVIRONMENT: Production
+  ConnectionStrings__DefaultConnection: Data Source=/mnt/nfsshare/webistecs-database/webistecs.db
+  ConnectionStrings__WebistecsContext: Data Source=/mnt/nfsshare/webistecs-database/webistecs.db
 
 dbMigrationJob:
   image:
