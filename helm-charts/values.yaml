@@ -6,7 +6,7 @@ webistecs:
     tag: 2
   environment:
     aspNetCoreEnvironment: Production
-    webistecsContext: "Data Source=/mnt/nfsshare/webistecs-database/local-webistecs.db"
+    webistecsContext: "Data Source=/mnt/nfsshare/webistecs-database/webistecs.db"
   imagePullSecret: myregistrykey
   secrets:
     coinbaseApiKeySecret: my-secret
