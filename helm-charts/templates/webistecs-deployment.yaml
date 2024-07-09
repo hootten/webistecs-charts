@@ -39,6 +39,10 @@ spec:
                   key: cb_apiSecret
             - name: DATABASE_PATH
               value: "/mnt/nfsshare/webistecs-database/webistecs.db"
+            - name: ASPNETCORE_ENVIRONMENT
+              value: {{ .Values.webistecs.environment.aspNetCoreEnvironment }}
+            - name: ConnectionStrings__WebistecsContext
+              value: {{ .Values.webistecs.environment.webistecsContext}}
           resources:
             requests:
               memory: "{{ .Values.webistecs.resources.requests.memory }}"

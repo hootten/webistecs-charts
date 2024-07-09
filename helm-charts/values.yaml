@@ -23,11 +23,6 @@ webistecs:
       memory: "1Gi"
       cpu: "1000m"
 
-env:
-  ASPNETCORE_ENVIRONMENT: Production
-  ConnectionStrings__DefaultConnection: Data Source=/mnt/nfsshare/webistecs-database/webistecs.db
-  ConnectionStrings__WebistecsContext: Data Source=/mnt/nfsshare/webistecs-database/webistecs.db
-
 dbMigrationJob:
   image:
     repository: niallwootten/webistecs-migrations
