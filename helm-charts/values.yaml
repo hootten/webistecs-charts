@@ -22,6 +22,12 @@ webistecs:
     limits:
       memory: "1Gi"
       cpu: "1000m"
+  logging:
+    enabled: "true"
+    module: "docker"
+    fileset:
+      stdout: "true"
+      stderr: "true"
 
 dbMigrationJob:
   image:
@@ -42,7 +48,7 @@ dbMigrationJob:
       hook: PreSync
       hookWeight: "5"
       hookDeletePolicy: "BeforeHookCreation,HookSucceeded"
-
+  
 nodeExporter:
   name: "node-exporter"
   image: "prom/node-exporter:latest"
