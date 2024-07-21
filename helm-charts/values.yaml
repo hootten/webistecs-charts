@@ -26,7 +26,7 @@ webistecs:
 dbMigrationJob:
   image:
     repository: niallwootten/webistecs-migrations
-    tag: 1
+    tag: webistecs_migrations_1.0.0
   environment:
     aspNetCoreEnvironment: Production
     webistecsContext: "Data Source=/mnt/nfsshare/webistecs-database/webistecs.db"
