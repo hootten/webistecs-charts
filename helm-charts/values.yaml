@@ -3,7 +3,7 @@ webistecs:
   replicaCount: 1
   image:
     repository: docker.io/niallwootten/webistecs
-    tag: 2
+    tag: webistecs_beta_1.0.1
   environment:
     aspNetCoreEnvironment: Production
     webistecsContext: "Data Source=/mnt/nfsshare/webistecs-database/webistecs.db"
